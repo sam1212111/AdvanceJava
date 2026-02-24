@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+   <bean class="in.cg.beans.Student" id="StdId">
+    <property name="sId" value="1003"/>
+    <property name="sName" value="Arman"/>
+    <property name="email" value="arman123@gmail.com"/>
+</bean>
+
+  <bean class="in.cg.beans.Student" id="StdId1">
+    <property name="sId" value="1004"/>
+    <property name="sName" value="Saurabh"/>
+    <property name="email" value="saurabh123@gmail.com"/>
+</bean>
+
+  <bean class="in.cg.beans.Address" id="Adt1">
+        <property name="street" value="123 MG Road"/>
+        <property name="city" value="Jaipur"/>
+        <property name="state" value="Rajasthan"/>
+        <property name="postalCode" value="302001"/>
+        <property name="country" value="India"/>
+    </bean>
+	
+</beans>
