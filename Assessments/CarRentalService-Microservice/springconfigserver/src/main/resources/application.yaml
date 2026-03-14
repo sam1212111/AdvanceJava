@@ -1,0 +1,22 @@
+server:
+  port: 7777
+
+spring:
+  application:
+    name: springconfigserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sam1212111/Microservices-Config.git
+          clone-on-start: true
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.jdbc.autoconfigure.DataSourceAutoConfiguration
+      - org.springframework.boot.hibernate.autoconfigure.HibernateJpaAutoConfiguration
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
